@@ -4,6 +4,8 @@ labour = 0.75 # per pizza
 rent = 1.0 # per pizza
 lare = labour + rent # lare is the first 2 letters of labour and rent
 inch = int(inch)
-cost = lare + 5 * inch / 10 # i couldn't multiply a float so i turned 0.5 into 5 so that it could multiplied and then i divided it
-cost = str(cost) 
-print ("the total cost of the pizza is " + cost + "$")
+near = inch * 5 / 10 # we should divide by 10 because we turned 0.5 to 5
+cost = (near + lare)
+money = cost * 1.13 # calculating the HST 
+money = str(money)
+print ("the total cost of the pizza is " + money + "$")
